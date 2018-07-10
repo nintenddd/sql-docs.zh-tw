@@ -1,5 +1,5 @@
 ---
-title: 步驟 1： 設定適用於拼音開發的開發環境 |Microsoft 文件
+title: 步驟 1： 設定適用於Ruby開發的開發環境 |Microsoft 文件
 ms.custom: ''
 ms.date: 01/19/2017
 ms.prod: sql
@@ -21,7 +21,7 @@ ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/03/2018
 ---
-# <a name="step-1-configure-development-environment-for-ruby-development"></a>步驟 1： 設定適用於拼音開發的開發環境
+# <a name="step-1-configure-development-environment-for-ruby-development"></a>步驟 1： 設定適用於Ruby開發的開發環境
 您必須設定開發環境的必要條件，才能開發使用 SQL Server 的 Ruby 驅動程式的應用程式。    
   
 請注意 Ruby 驅動程式會使用 TDS 通訊協定，SQL Server 和 Azure SQL Database 中的預設會啟用。  不需要進行其他組態設定。  
@@ -30,18 +30,18 @@ ms.lasthandoff: 05/03/2018
 ## <a name="windows"></a>視窗  
   
 1.  **下載後安裝程式**  
-如果您的電腦沒有 Ruby 請加以安裝。 新的拼音使用者，我們建議您針對使用拼音 2.2.X 安裝程式。 這些資料行會提供穩定的語言和廣泛的封裝 （珍貴） 相容，並且更新清單。 移[拼音下載頁面](http://rubyinstaller.org/downloads/)及下載適當的 2.1.x 版安裝程式。 如範例中，如果您是在 64 位元的電腦，下載 Ruby 2.1.6 (x64) 安裝程式。   
+如果您的電腦沒有 Ruby 請加以安裝。 新的Ruby使用者，我們建議您針對使用Ruby 2.2.X 安裝程式。 這些資料行會提供穩定的語言和廣泛的封裝 （珍貴） 相容，並且更新清單。 移[Ruby下載頁面](http://rubyinstaller.org/downloads/)及下載適當的 2.1.x 版安裝程式。 如範例中，如果您是在 64 位元的電腦，下載 Ruby 2.1.6 (x64) 安裝程式。   
   
 2.  **安裝 Ruby**  
 安裝程式下載後，執行下列作業：  
 a. 按兩下檔案以啟動安裝程式。  
 b. 選取語言，並同意這些條款。  
-c.  在 [安裝設定] 畫面中，選取這兩個新增 Ruby 可執行檔路徑和關聯需要.rb 和.rbw 檔案這拼音項安裝旁邊的核取方塊。  
+c.  在 [安裝設定] 畫面中，選取這兩個新增 Ruby 可執行檔路徑和關聯需要.rb 和.rbw 檔案這項安裝旁邊的核取方塊。  
   
-3.  **下載拼音 DevKit**  
+3.  **下載Ruby DevKit**  
 從 RubyInstaller 頁面下載 DevKit  
   
-4.  **安裝拼音 DevKit**  
+4.  **安裝Ruby DevKit**  
 下載完成之後，執行下列作業：  
 a. 按兩下該檔案。 將會要求您解壓縮檔案的位置。  
 b. 按一下"..."按鈕，然後選取 「 C:\DevKit"。 您可能必須先建立這個資料夾，依序按一下 建立新資料夾 」。  
@@ -49,14 +49,14 @@ c. 按一下 [確定]，並接著 「 擷取 」，請將檔案解壓縮。
   
 5. **開啟 cmd.exe**  
   
-6. **初始化拼音 DevKit**  
+6. **初始化Ruby DevKit**  
 ```  
 > chdir C:\DevKit  
 > ruby dk.rb init  
 > ruby dk.rb install  
 ```  
   
-7.  **安裝 TinyTDS 健身**  
+7.  **安裝 TinyTDS gem**  
 ```  
 > gem inst tiny_tds
 ```  
@@ -108,7 +108,7 @@ c. 按一下 [確定]，並接著 「 擷取 」，請將檔案解壓縮。
 > brew install FreeTDS  
 ```  
   
-4.  **安裝 TinyTDS 健身**  
+4.  **安裝 TinyTDS gem**  
 ```  
 > gem install tiny_tds  
 ```
